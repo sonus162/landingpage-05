@@ -564,7 +564,7 @@ body {
 }
 .footer__heading {
     margin-bottom: 14px;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 16px;
     font-weight: 600;
     line-height: 1.75;
@@ -574,7 +574,7 @@ body {
     margin-bottom: 14px;
     text-decoration: none;
     color: #a9b3bb;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 1.85; /* 185.714% */
@@ -645,7 +645,7 @@ body {
 .footer__copy-right {
     text-align: center;
     color: #aab3ba;
-    font-family: Open Sans;
+    font-family: "Open Sans";
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
