@@ -9,21 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/fonts/font.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__body">
                 <img src="./assets/img/Logo.svg" alt="" class="header__logo">
                 <ul class="header__nav">
-                    <li class="active"><a href="#!" class="header__nav__link">Home</a></li>
-                    <li><a href="#!" class="header__nav__link">Services</a></li>
-                    <li><a href="#!" class="header__nav__link">About</a></li>
-                    <li><a href="#!" class="header__nav__link">Doctors</a></li>
+                    <li class="active"><a href="#" class="header__nav__link">Home</a></li>
+                    <li><a href="#services" class="header__nav__link">Services</a></li>
+                    <li><a href="#about" class="header__nav__link">About</a></li>
+                    <li><a href="#team" class="header__nav__link">Doctors</a></li>
                 </ul>
                 <div class="header__cta">
                     <a href="#" class="btn-login">Log In</a>
@@ -32,7 +35,8 @@
             </div>
             <section class="hero">
                 <section class="hero__content">
-                    <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+                    <h1 class="hero__heading" data-aos="fade-up" data-aos-duration="3000">Exceptional dental care for
+                        all ages.</h1>
                     <p class="hero__desc">Exceptional dental care for all ages. Your great smile begins with a great
                         dentist.</p>
                     <div class="hero__cta">
@@ -42,8 +46,10 @@
                 </section>
                 <div class="hero__media">
                     <figure class="hero__images">
-                        <img src="./assets/img/hero1.jpg" alt="" class="hero__img">
-                        <img src="./assets/img/hero2.jpg" alt="" class="hero__img">
+                        <img src="./assets/img/hero1.jpg" alt="" class="hero__img" data-aos="fade-up"
+                            data-aos-duration="3000" data-aos-easing="ease-in-out">
+                        <img src="./assets/img/hero2.jpg" alt="" class="hero__img" data-aos="fade-down"
+                            data-aos-duration="3000" data-aos-easing="ease-in-out">
                     </figure>
                 </div>
             </section>
@@ -54,12 +60,15 @@
         <!-- Services -->
         <section class="services" id="services">
             <div class="container">
-                <h2 class="services__heading section-heading">Our services</h2>
-                <p class="services__desc section-desc">Exceptional dental care for all ages. Your great smile begins
+                <h2 class="services__heading section-heading" data-aos="fade-up" data-aos-duration="1000">Our services
+                </h2>
+                <p class="services__desc section-desc" data-aos="fade-up" data-aos-duration="1500">Exceptional dental
+                    care for all ages. Your great smile begins
                     with a great dentist.</p>
                 <section class="services__content">
                     <figure>
-                        <img src="./assets/img/services.jpg" alt="" class="services__img">
+                        <img src="./assets/img/services.jpg" alt="" class="services__img" data-aos="fade-right"
+                            data-aos-duration="2000">
                     </figure>
                     <div>
                         <div class="services__list">
@@ -97,8 +106,9 @@
         <!-- Work -->
         <section class="work">
             <div class="container">
-                <h2 class="section-heading">How it works</h2>
-                <p class="section-desc work__desc">Exceptional dental care for all ages. Your great smile begins with a
+                <h2 class="section-heading" data-aos="fade-up" data-aos-duration="1000">How it works</h2>
+                <p class="section-desc work__desc" data-aos="fade-up" data-aos-duration="1500">Exceptional dental care
+                    for all ages. Your great smile begins with a
                     great
                     dentist.</p>
                 <section class="work__list">
@@ -128,16 +138,20 @@
         </section>
 
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <section class="about__content">
                     <figure class="about__images">
-                        <img src="./assets/img/about1.jpg" alt="" class="about__img">
-                        <img src="./assets/img/about2.jpg" alt="" class="about__img">
+                        <img src="./assets/img/about1.jpg" alt="" class="about__img" data-aos="fade-up"
+                            data-aos-duration="2000">
+                        <img src="./assets/img/about2.jpg" alt="" class="about__img" data-aos="fade-down"
+                            data-aos-duration="2000">
                     </figure>
                     <div class="about__info">
-                        <h2 class="section-heading">Take back your smile with shine.</h2>
-                        <p class="section-desc about__desc">If you’re missing multiple teeth due to decay, injury, or
+                        <h2 class="section-heading" data-aos="fade-up" data-aos-duration="1000">Take back your smile
+                            with shine.</h2>
+                        <p class="section-desc about__desc" data-aos="fade-up" data-aos-duration="1500">If you’re
+                            missing multiple teeth due to decay, injury, or
                             the natural aging process, dentures might be the perfect solution.</p>
                         <a href="#" class="btn about__btn">Learn More</a>
                     </div>
@@ -146,29 +160,29 @@
         </section>
 
         <!-- Team -->
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="team__top">
-                    <h2 class="section-heading">Our virtual dentist</h2>
+                    <h2 class="section-heading" data-aos="fade-up" data-aos-duration="1000">Our virtual dentist</h2>
                     <a href="#!" class="btn team__btn">Meet our dentist</a>
                 </div>
                 <div class="team__list">
-                    <div class="team-item">
+                    <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
                         <img src="./assets/img/doctor1.png" alt="" class="team-item__avatar">
                         <h3 class="team-item__name">Dr. Essence Page</h3>
                         <p class="team-item__address">DDS, California - Linda University</p>
                     </div>
-                    <div class="team-item">
+                    <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
                         <img src="./assets/img/doctor2.png" alt="" class="team-item__avatar">
                         <h3 class="team-item__name">Dr. Essence Page</h3>
                         <p class="team-item__address">DDS, California - Linda University</p>
                     </div>
-                    <div class="team-item">
+                    <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
                         <img src="./assets/img/doctor3.png" alt="" class="team-item__avatar">
                         <h3 class="team-item__name">Dr. Essence Page</h3>
                         <p class="team-item__address">DDS, California - Linda University</p>
                     </div>
-                    <div class="team-item">
+                    <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
                         <img src="./assets/img/doctor4.png" alt="" class="team-item__avatar">
                         <h3 class="team-item__name">Dr. Essence Page</h3>
                         <p class="team-item__address">DDS, California - Linda University</p>
@@ -189,8 +203,10 @@
                         <img src="./assets/img/install.png" alt="" class="install__images">
                     </figure>
                     <section class="install__content">
-                        <h2 class="install__title section-heading">Take back your smile with dentures</h2>
-                        <p class="install__desc section-desc">If you’re missing multiple teeth due to decay, injury, or
+                        <h2 class="install__title section-heading" data-aos="fade-up" data-aos-duration="1000">Take back
+                            your smile with dentures</h2>
+                        <p class="install__desc section-desc" data-aos="fade-up" data-aos-duration="1500">If you’re
+                            missing multiple teeth due to decay, injury, or
                             the natural aging process, dentures might be the perfect solution.</p>
                         <div class="install__row">
                             <figure>
@@ -212,7 +228,8 @@
             <div class="container">
                 <div class="news__content">
                     <div class="news__info">
-                        <h2 class="section-heading news__heading">Read Latest News & Events.</h2>
+                        <h2 class="section-heading news__heading" data-aos="fade-up" data-aos-duration="1000">Read
+                            Latest News & Events.</h2>
                         <a href="" class="news__link">Read All Blog</a>
                         <div class="news_cta">
                             <a href="" class="btn-prev"><i class="fas fa-chevron-left "></i></a>
@@ -244,6 +261,30 @@
                                 <a href="" class="news-item__link">Learn More</a>
                             </div>
                         </article>
+                        <article class="news-item">
+                            <figure class="news-item__thumb">
+                                <img src="./assets/img/news4.jpg" alt="" class="news-item__thumbnail">
+                            </figure>
+                            <div class="news-item__info">
+                                <h2 class="news-item__title">Key Considerations for Regulatory Compliant.</h2>
+                                <p class="news-item__desc">It’s easy to think about medical care from a narrow
+                                    perspective.
+                                    You go to the hospital.</p>
+                                <a href="" class="news-item__link">Learn More</a>
+                            </div>
+                        </article>
+                        <article class="news-item">
+                            <figure class="news-item__thumb">
+                                <img src="./assets/img/news1.jpg" alt="" class="news-item__thumbnail">
+                            </figure>
+                            <div class="news-item__info">
+                                <h2 class="news-item__title">Key Considerations for Regulatory Compliant.</h2>
+                                <p class="news-item__desc">It’s easy to think about medical care from a narrow
+                                    perspective.
+                                    You go to the hospital.</p>
+                                <a href="" class="news-item__link">Learn More</a>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -253,8 +294,10 @@
         <section class="contact">
             <div class="container">
                 <div class="contact__info">
-                    <h2 class="section-heading contact__heading">Always welcoming new patients</h2>
-                    <p class="section-desc contact__desc">Take control of your dental health and get the personalized
+                    <h2 class="section-heading contact__heading" data-aos="fade-up" data-aos-duration="1000">Always
+                        welcoming new patients</h2>
+                    <p class="section-desc  contact__desc" data-aos="fade-up" data-aos-duration="1500">Take control of
+                        your dental health and get the personalized
                         care you deserve. Call (541) 772-8846 to schedule</p>
                     <a href="" class="btn contact__btn">Appointment</a>
                 </div>
@@ -335,6 +378,12 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/style.js"></script>
 </body>
 
 </html>

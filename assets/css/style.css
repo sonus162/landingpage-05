@@ -650,3 +650,7 @@ body {
     font-weight: 400;
     line-height: 26px;
 }
+
+.slick-slide {
+    margin-left: 30px;
+}
