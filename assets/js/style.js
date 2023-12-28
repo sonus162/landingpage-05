@@ -1,5 +1,7 @@
 AOS.init();
 $(".news__list").slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
     dots: false,
     infinite: true,
     speed: 300,
@@ -7,3 +9,9 @@ $(".news__list").slick({
     slidesToScroll: 1,
     arrows: false,
 });
+function prevSlide() {
+    $(".news__list").slick("slickPrev");
+}
+function nextSlide() {
+    $(".news__list").slick("slickNext");
+}
